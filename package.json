@@ -1,0 +1,28 @@
+{
+  "name": "deployignore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmccooyyy/deployignore.git"
+  },
+  "bin": {
+    "deployignore": "./bin/deployignore.js"
+  },
+  "author": "Matthew McCoy <matthew.e.mccoy@gmail.com> (mattmc.co/y)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmccooyyy/deployignore/issues"
+  },
+  "homepage": "https://github.com/mmccooyyy/deployignore#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "liftoff": "^2.3.0",
+    "minimist": "^1.2.0",
+    "path": "^0.12.7"
+  }
+}
