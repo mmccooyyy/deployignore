@@ -51,7 +51,7 @@ function invoke (env) {
           fs.access(filepath, fs.constants.W_OK, (err) => {
             if(!err){
               if(fs.lstatSync(filepath).isDirectory()){
-                fs.rimraf(filepath, function(error){
+                rimraf(filepath, function(error){
                   if(error){
                     console.error(error);
                     process.exit(5);
