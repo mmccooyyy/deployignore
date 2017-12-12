@@ -39,6 +39,7 @@ Here's an example `deployignore.json` file:
 You can run Deployignore anywhere in your project:
 
 `~/my-project $ deployignore`
+
 `~/my-project/bin/models $ deployignore`
 (both of these work)
 
