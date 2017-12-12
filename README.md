@@ -1,6 +1,6 @@
 # deployignore
 
-[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url]
+[![npm version](https://badge.fury.io/js/deployignore.svg)](https://badge.fury.io/js/deployignore)
 
 
 ## What is deployignore?
@@ -31,7 +31,8 @@ Here's an example `deployignore.json` file:
 [
 "file1.txt",
 "subdir/subsubdir/file2.txt",
-"file3.txt"
+"file3.txt",
+"subdir/byebyedir"
 ]
 ```
 
