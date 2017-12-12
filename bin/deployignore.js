@@ -2,6 +2,7 @@
 const Liftoff = require('liftoff');
 const path = require('path');
 const fs = require('fs');
+const rimraf = require('rimraf');
 const argv = require('minimist')(process.argv.slice(2));
 
 const Deployignore = new Liftoff({
@@ -50,7 +51,7 @@ function invoke (env) {
           fs.access(filepath, fs.constants.W_OK, (err) => {
             if(!err){
               if(fs.lstatSync(filepath).isDirectory()){
-                fs.rmdir(filepath, function(error){
+                fs.rimraf(filepath, function(error){
                   if(error){
                     console.error(error);
                     process.exit(5);
